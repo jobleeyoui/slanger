@@ -218,8 +218,9 @@ OceanEx Slanger supports several configuration options, which can be supplied as
 # Current Core Team and Contributor
 - Joblee
 - Steve
-- Yao
 - Meng
+- Sniper
+- Jiayu
 
 
 &copy; 2020 a OceanEx joint.
