@@ -29,7 +29,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "activesupport", "~> 6.0.3"
   spec.add_dependency "sinatra", "~> 2.1.0"
   spec.add_dependency "thin", "~> 1.7.2"
-  spec.add_dependency "em-http-request", "~> 1.1.6"
+  spec.add_dependency "em-http-request", "~> 1.1.7"
   spec.add_dependency "oj", "~> 3.10.14"
 
   spec.add_development_dependency "rspec", "~> 3.9.0"
