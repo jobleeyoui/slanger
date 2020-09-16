@@ -22,7 +22,7 @@ module Slanger
       begin
         send_payload nil, "pusher:error", e
       rescue EventMachine::WebSocket::WebSocketError
-        # Raised if connecection already closed. Only seen with Thor load testing tool
+        # Raised if connection already closed. Only seen with Thor load testing tool
       end
     end
 

@@ -24,15 +24,17 @@ module Slanger
       end
 
       def lookup(channel_id)
-        all.detect { |o| o.channel_id == channel_id }
+        all[channel_id]
       end
 
       def create(params = {})
-        new(params).tap { |r| all << r }
+        new(params).tap do |channel|
+          all[channel.channel_id] = channel
+        end
       end
 
       def all
-        @all ||= []
+        @all ||= {}
       end
 
       def unsubscribe(channel_id, subscription_id)

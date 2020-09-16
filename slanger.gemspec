@@ -3,7 +3,7 @@ require_relative "lib/slanger/version"
 Gem::Specification.new do |spec|
   spec.name = "oceanex-slanger"
   spec.version = Slanger::VERSION
-  spec.authors = ["Joblee", "Steve","Meng",  "Sniper", "Jiayu"]
+  spec.authors = ["Joblee", "Steve", "Meng", "Sniper", "Jiayu"]
   spec.email = ["jobleeyoui@gmail.com"]
 
   spec.summary = "A websocket service compatible with Pusher libraries"
