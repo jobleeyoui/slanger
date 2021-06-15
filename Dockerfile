@@ -1,4 +1,4 @@
-FROM ruby:2.6.3
+FROM ruby:3.0.1
 
 LABEL maintainer=OceanEx
 
@@ -16,7 +16,7 @@ RUN groupadd -r --gid ${GID} app \
   --gid ${GID} --uid ${UID} app \
   # Install system dependencies.
   && apt-get update \
-  && gem install bundler:2.1.4
+  && gem install bundler:2.2.20
 
 RUN bundle config --global frozen 1
 WORKDIR $APP_HOME
@@ -33,4 +33,4 @@ RUN chmod +x  ./bin/slanger
 
 EXPOSE 4567 8080
 
-CMD bundle exec ./bin/slanger --app_key $APP_KEY --secret $APP_SECRET -r $REDIS_URL
+CMD bundle exec ./bin/slanger --app_key $APP_KEY --secret $APP_SECRET -r $REDIS_URL $VERBOSE_CONFIG

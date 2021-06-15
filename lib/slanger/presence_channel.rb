@@ -65,7 +65,7 @@ module Slanger
     end
 
     def unsubscribe(public_subscription_id)
-      # Unsubcribe from EM::Channel
+      # Unsubscribe from EM::Channel
       channel.unsubscribe(internal_subscription_table.delete(public_subscription_id)) # if internal_subscription_table[public_subscription_id]
       # Remove subscription data from Redis
       roster_remove public_subscription_id

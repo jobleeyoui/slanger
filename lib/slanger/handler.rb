@@ -59,7 +59,7 @@ module Slanger
         error({ code: 4007, message: "Unsupported protocol version" })
         @socket.close_websocket
       else
-        return connection.establish
+        connection.establish
       end
     end
 

@@ -18,7 +18,7 @@ OceanEx Slanger is a standalone server ruby implementation of the Pusher protoco
 
 ## Requirements
 
-- Ruby 2.6.3 or greater
+- Ruby 3.0.1 or greater
 - Redis
 
 ## Server setup
@@ -223,4 +223,4 @@ OceanEx Slanger supports several configuration options, which can be supplied as
 - Jiayu
 
 
-&copy; 2020 a OceanEx joint.
+&copy; 2021 a OceanEx joint.

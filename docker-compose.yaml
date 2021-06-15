@@ -13,6 +13,7 @@ services:
       REDIS_URL: redis://0.0.0.0:6379/0
       APP_KEY: 41f99041ceee27e3a395b08fb542
       APP_SECRET: b1a5cd689d2b71f1819e0583fe1f
+      VERBOSE_CONFIG: "-v"
     ports:
       - "8080:8080"
       - "4567:4567"

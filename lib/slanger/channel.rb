@@ -95,7 +95,7 @@ module Slanger
     private
 
     def perform_client_webhook!(message)
-      if (message["event"].start_with?("client-"))
+      if message["event"].start_with?("client-")
         event = message.merge({ "name" => "client_event" })
         event["data"] = Oj.dump(event["data"])
 

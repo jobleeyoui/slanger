@@ -8,7 +8,7 @@ class ReplacedHandler < Slanger::Handler
   end
 end
 
-describe "Replacable handler" do
+describe "Replaceable handler" do
   it "says welcome" do
     start_slanger_with_options socket_handler: ReplacedHandler
 
